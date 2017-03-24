@@ -1,44 +1,44 @@
 {
   "classes": [
     {
-      "roomNo": "s326",
-      "code": "9413",
-      "instructor": "Montes",
-      "subject": "web-tech",
+      "roomNo": "s426",
+      "code": "9423",
+      "instructor": "Sir Ali",
+      "subject": "integLec",
       "location-X": "10",
       "location-Y": "30",
       "time": "12",
-      "day": "Sunday"
+      "day": "Friday"
     },
     {
-      "roomNo": "s326",
+      "roomNo": "s527",
       "code": "9413",
-      "instructor": "Montes",
-      "subject": "web-tech",
+      "instructor": "Sir Famorca",
+      "subject": "Networks",
       "location-X": "10",
       "location-Y": "30",
-      "time": "12",
-      "day": "Sunday"
+      "time": "10",
+      "day": "Wednesday"
     },
     {
       "roomNo": "s326",
-      "codeNo": "9413",
-      "instructor": "Montes",
+      "codeNo": "9426",
+      "instructor": "Sir Montes",
       "subject": "web-tech",
       "locX": "10",
       "locY": "30",
-      "classTime": "12",
-      "day": "Sunday"
+      "classTime": "2",
+      "day": "Monday"
     },
     {
-      "roomNo": "s326",
+      "roomNo": "s425",
       "code": "9413",
-      "instructor": "Montes",
-      "subject": "web-tech",
+      "instructor": "Maam Mendoza",
+      "subject": "Tech Press",
       "location-X": "10",
       "location-Y": "30",
-      "time": "12",
-      "day": "Sunday"
+      "time": "1",
+      "day": "Tuesday"
     }
   ]
 }
