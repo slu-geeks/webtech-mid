@@ -119,3 +119,26 @@ function saveTheChanges() {
     }
 
 }
+
+
+function changeCoordinatorColor(e) {
+
+
+    var element  = e.target;
+    var coordinate = element.getAttribute("coords");
+
+    alert(coordinate);
+
+    var pos = coordinate.split(',');
+
+    var left = pos[0];
+    var top = pos[1];
+    var width = pos[2];
+    var height = pos[3];
+
+
+    // document.getElementById("floor1Id").setAttribute("style", "position:absolute;top:"+ top+"px;left:"+ left+ "px;width:"+ width+ "px;height:"+ height+"px; background:#f00;");
+
+    element.setAttribute("style", "position:absolute;top:"+ top+"px;left:"+ left+ "px;width:"+ width+ "px;height:"+ height+"px; background:#f00;");
+
+}

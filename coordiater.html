@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+
+    <script type="text/javascript" src="attendance.js"></script>
 </head>
 <body>
 
-<img src="rect.png" width="688" height="224" alt="pic" usemap="floors" >
+<img id="floor1Id" src="rect.png" width="688" height="224" alt="pic" usemap="floors" >
 
 <map name="floors">
-<area shape="rect" coords="29, 0, 122, 55" alt="room" href="" >
+<area shape="rect" coords="29, 0, 122, 55" alt="room" href="" onclick="changeCoordinatorColor(event);return false;">
 </map>
 </body>
 </html>
