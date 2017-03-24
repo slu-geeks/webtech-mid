@@ -61,18 +61,16 @@ function parseFile() {
 
 
                 var chkbox1 = document.createElement("input");
-                chkbox1.setAttribute("id","chkBox1-" + i);
+                chkbox1.setAttribute("id", "chkBox1-" + i);
                 chkbox1.setAttribute("type", "checkbox");
 
                 var chkbox2 = document.createElement("input");
-                chkbox2.setAttribute("id","chkBox2-" + i);
+                chkbox2.setAttribute("id", "chkBox2-" + i);
                 chkbox2.setAttribute("type", "checkbox");
 
 
                 unOrderedList.appendChild(chkbox1);
                 unOrderedList.appendChild(chkbox2);
-
-
 
 
                 nodeP.appendChild(unOrderedList);
@@ -100,20 +98,20 @@ function saveTheChanges() {
 
     var uls = document.getElementsByClassName("jsonElement");
 
-    for(var i = 0; i < uls.length; i++){
+    for (var i = 0; i < uls.length; i++) {
         var chkBox1 = document.getElementById("chkBox1-" + i);
         var chkBox2 = document.getElementById("chkBox2-" + i);
 
 
-        if(chkBox1.checked){
-            alert("checkbox1 in" + (i+1) + "row is checked");
-        }else{
+        if (chkBox1.checked) {
+            alert("checkbox1 in" + (i + 1) + "row is checked");
+        } else {
             // alert("checkbox1 in" + i + "row is not checked");
         }
 
-        if(chkBox2.checked){
-            alert("checkbox2 in" + (i+1) + "row is checked");
-        }else{
+        if (chkBox2.checked) {
+            alert("checkbox2 in" + (i + 1) + "row is checked");
+        } else {
             // alert("checkbox2 in" + i + "row is not checked");
         }
     }
@@ -123,22 +121,25 @@ function saveTheChanges() {
 
 function changeCoordinatorColor(e) {
 
+    var isTeacherAvailable = confirm("is this room full ????");
 
-    var element  = e.target;
-    var coordinate = element.getAttribute("coords");
+    if (isTeacherAvailable) {
 
-    alert(coordinate);
+        var element = e.target;
+        var coordinate = element.getAttribute("coords");
 
-    var pos = coordinate.split(',');
+        alert(coordinate);
+        var pos = coordinate.split(',');
 
-    var left = pos[0];
-    var top = pos[1];
-    var width = pos[2];
-    var height = pos[3];
+        var left = pos[0];
+        var top = pos[1];
+        var width = pos[2];
+        var height = pos[3];
 
 
-    // document.getElementById("floor1Id").setAttribute("style", "position:absolute;top:"+ top+"px;left:"+ left+ "px;width:"+ width+ "px;height:"+ height+"px; background:#f00;");
+        // document.getElementById("floor1Id").setAttribute("style", "position:absolute;top:"+ top+"px;left:"+ left+ "px;width:"+ width+ "px;height:"+ height+"px; background:#f00;");
 
-    element.setAttribute("style", "position:absolute;top:"+ top+"px;left:"+ left+ "px;width:"+ width+ "px;height:"+ height+"px; background:#f00;");
+        element.setAttribute("style", "position:absolute;top:" + top + "px;left:" + left + "px;width:" + width + "px;height:" + height + "px; background:#f00;");
+    }
 
 }
