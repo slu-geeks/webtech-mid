@@ -22,16 +22,16 @@
     },
     {
       "roomNo": "s326",
-      "codeNo": "9426",
+      "code": "9426",
       "instructor": "Sir Montes",
-      "subject": "web-tech",
+      "subject": "web-techLec",
       "locX": "10",
       "locY": "30",
       "classTime": "2",
       "day": "Monday"
     },
     {
-      "roomNo": "s425",
+      "roomNo": "s426",
       "code": "9413",
       "instructor": "Maam Mendoza",
       "subject": "Tech Press",
