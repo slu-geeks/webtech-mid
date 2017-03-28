@@ -66,31 +66,31 @@ function search() {
             chkbox6.setAttribute("type", "checkbox");
 
             for (var i = 0; i < jsonData.classes.length; i++) {
-                var jiji = jsonData.classes[i];
+                var clazz = jsonData.classes[i];
 
 
 
-                if(jiji.roomNo == "s426"){
+                if(clazz.roomNo == "s426"){
                     alert(jsonData.classes[i].code+"\n"+jsonData.classes[i].instructor+"\n"+jsonData.classes[i].subject+"\n"+jsonData.classes[i].time+"\n"+jsonData.classes[i].day);
                 }
 
-                if(jiji.code == "9413"){
+                if(clazz.code == "9413"){
                     alert(jsonData.classes[i].roomNo+"\n"+jsonData.classes[i].instructor+"\n"+jsonData.classes[i].subject+"\n"+jsonData.classes[i].time+"\n"+jsonData.classes[i].day);
                 }
 
-                if(jiji.instructor == "Sir Montes"){
+                if(clazz.instructor == "Sir Montes"){
                     alert(jsonData.classes[i].roomNo+"\n"+jsonData.classes[i].code+"\n"+jsonData.classes[i].subject+"\n"+jsonData.classes[i].time+"\n"+jsonData.classes[i].day);
                 }
 
-                if(jiji.subject == "Tech Press"){
+                if(clazz.subject == "Tech Press"){
                     alert(jsonData.classes[i].roomNo+"\n"+jsonData.classes[i].code+"\n"+jsonData.classes[i].instructor+"\n"+jsonData.classes[i].time+"\n"+jsonData.classes[i].day);
                 }
 
-                if(jiji.time == "12"){
+                if(clazz.time == "12"){
                     alert(jsonData.classes[i].roomNo+"\n"+jsonData.classes[i].code+"\n"+jsonData.classes[i].instructor+"\n"+jsonData.classes[i].subject+"\n"+jsonData.classes[i].day);
                 }
 
-                if(jiji.day == "Monday"){
+                if(clazz.day == "Monday"){
                     alert(jsonData.classes[i].roomNo+"\n"+jsonData.classes[i].code+"\n"+jsonData.classes[i].instructor+"\n"+jsonData.classes[i].subject+"\n"+jsonData.classes[i].time);
                 }
 

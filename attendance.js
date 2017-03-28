@@ -3,6 +3,52 @@
  */
 
 
+
+
+function searchText(){
+    var savedInfoLocalStorage = localStorage.getItem('ourJsonObject');
+
+    if(!savedInfoLocalStorage){
+        alert("you have to provide the json file first ~");
+        return;
+    }
+
+
+    var textVariable = document.getElementById("searchInput").value;
+    var jsonData = JSON.parse(savedInfoLocalStorage);
+
+    var codeNomArray  = [];
+    for(var j = 0; j < jsonData.classes.length; j++){
+        var clazzzz = jsonData.classes[j];
+        var codeNo = clazzzz.codeNo;
+        codeNomArray[j] = codeNo;
+    }
+
+
+//    alert(codeNomArray);
+
+    var returnNumber = searchStringInArray(textVariable, codeNomArray);
+
+    console.log(returnNumber);
+
+
+}
+
+function searchStringInArray (str, strArray) {
+    var finded = [];
+    var counter = 0;
+    console.log(str);
+    for(var t = 0; t<strArray.length; t++){
+        if(str != "" && str != undefined && strArray[t].includes(str)){
+            finded[counter++] = strArray[t];
+
+        }
+    }
+
+    return finded;
+}
+
+
 function parseFile() {
 
 
@@ -13,6 +59,10 @@ function parseFile() {
 
         reader.onload = function (e) {
             var jsonRow = e.target.result;
+            localStorage.setItem('ourJsonObject', jsonRow);
+
+
+
             var jsonData = JSON.parse(jsonRow);
             var nodeP = document.createElement("P");
 
@@ -119,6 +169,7 @@ function saveTheChanges() {
 }
 
 
+
 function changeCoordinatorColor(e) {
 
     var isTeacherAvailable = confirm("is this room full ????");
@@ -142,4 +193,13 @@ function changeCoordinatorColor(e) {
         element.setAttribute("style", "position:absolute;top:" + top + "px;left:" + left + "px;width:" + width + "px;height:" + height + "px; background:#f00;");
     }
 
+}
+
+
+function availability() {
+
+    //check if the local storage data for availability is refreshed for the current day
+
+
+    
 }

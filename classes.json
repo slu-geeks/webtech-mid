@@ -2,7 +2,7 @@
   "classes": [
     {
       "roomNo": "s426",
-      "code": "9423",
+      "codeNo": "9423",
       "instructor": "Sir Ali",
       "subject": "integLec",
       "location-X": "10",
@@ -12,7 +12,7 @@
     },
     {
       "roomNo": "s527",
-      "code": "9413",
+      "codeNo": "9413",
       "instructor": "Sir Famorca",
       "subject": "Networks",
       "location-X": "10",
@@ -22,7 +22,7 @@
     },
     {
       "roomNo": "s326",
-      "code": "9426",
+      "codeNo": "9426",
       "instructor": "Sir Montes",
       "subject": "web-techLec",
       "locX": "10",
@@ -32,7 +32,7 @@
     },
     {
       "roomNo": "s426",
-      "code": "9413",
+      "codeNo": "9413",
       "instructor": "Maam Mendoza",
       "subject": "Tech Press",
       "location-X": "10",

@@ -1,0 +1,63 @@
+{
+  "instructors": [
+    {
+      "name": "",
+      "inNo": "",
+      "title": "",
+      "schedule": [
+        {
+          "room": "",
+          "classCode": "",
+          "subject" : "",
+          "time" : "",
+          "day" : ""
+        }
+      ]
+    },
+    {
+      "name": "",
+      "inNo": "",
+      "title": "",
+      "schedule": [
+        {
+          "room": "",
+          "classCode": "",
+          "subject" : "",
+          "time" : "",
+          "day" : ""
+        }
+      ]
+    },
+    {
+      "name": "",
+      "inNo": "",
+      "title": "",
+      "schedule": [
+        {
+          "room": "",
+          "classCode": "",
+          "subject" : "",
+          "time" : "",
+          "day" : ""
+        }
+      ]
+    },
+    {
+      "name": "",
+      "inNo": "",
+      "title": "",
+      "schedule": [
+        {
+          "room": "",
+          "classCode": "",
+          "subject" : "",
+          "time" : "",
+          "day" : ""
+        }
+      ]
+    }
+  ]
+}
+
+
+//"numOfAbsences" : "", this has to save inside local storage
