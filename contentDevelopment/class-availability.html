@@ -32,6 +32,7 @@
                     <li><a href="#">Class Attendance</a></li>
                     <li><a href="#">Class Availability</a></li>
                     <li><a href="#">Faculty Schedule</a></li>
+                    <li><a href="#">Class Schedule</a></li>
                     <li><a href="#">Reports</a></li>
 
                 </ul>
@@ -44,14 +45,21 @@
 </header>
 
 <section>
-    <div>
-        <img id="floor1Id" src="static/img/rect.png" width="688" height="224" alt="pic" usemap="floors" >
 
-        <map name="floors">
-            <area shape="rect" coords="29, 0, 122, 55" alt="room" onclick="changeCoordinatorColor(event);return false;">
-        </map>
-    </div>
+    <section class="row">
+        <section class="col-lg-5" style="margin : 10px 20px 0px 20px !important;">
+            <div class="panel panel-default">
+                <div class="panel-heading">The Floor Name</div>
+                <div style="text-align: center; margin: 10px;">
+                    <img id="floor1Id" src="static/img/rect.png" width="688" height="224" alt="pic" usemap="floors" >
 
+                    <map name="floors">
+                        <area shape="rect" coords="29, 0, 122, 55" alt="room" onclick="changeCoordinatorColor(event);return false;">
+                    </map>
+                </div>
+            </div>
+            </section>
+        </section>
 </section>
 
 

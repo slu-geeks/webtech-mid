@@ -2,14 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Faculty Schedule</title>
+    <title>Check Attendance</title>
 
     <script type="text/javascript" src="static/bootstrap/js/jquery.min.js"></script>
     <script type="text/javascript" src="static/bootstrap/js/bootstrap.min.js"></script>
 
     <link rel="stylesheet" href="static/bootstrap/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="static/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="static/css/public.css">
 </head>
 <body>
 <header>
@@ -44,30 +43,29 @@
     </nav>
 </header>
 
-<div class="clearfix"/>
-
 <section id="searchFacultyID">
     <div class="row">
         <div class="col-lg-4" style="margin : 10px 20px 0px 20px !important;">
-            <div class="input-group">
-                <input type="text" class="form-control" placeholder="Faculty Name / ID Number">
-                <span class="input-group-btn">
+            <div>
+                <div>
+                <input type="text" class="form-control" placeholder="Class Code">
+                </div>
+                <!--<span class="input-group-btn">-->
+                    <div><input type="date" class="form-control" placeholder="choose your date"></div>
+                <!--<span class="input-group-btn">-->
         <button class="btn btn-default" type="button">Go!</button>
       </span>
             </div><!-- /input-group -->
         </div>
     </div>
 </section>
-<div class="clearfix"/>
 
 <section class="row">
     <section class="col-lg-4" style="margin : 10px 20px 0px 20px !important;">
         <div class="panel panel-default">
             <!-- Default panel contents -->
-            <div class="panel-heading">InstructorName</div>
-            <div class="panel-body">
-                <p>Biography of the Instructor</p>
-            </div>
+            <div class="panel-heading">Class Code Schedule</div>
+
             <table class="table">
                 <thead>
                 <tr>
@@ -111,5 +109,6 @@
         </div>
     </section>
 </section>
+
 </body>
 </html>
