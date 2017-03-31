@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <script src="attendance.js"></script>
+    <script src="static/js/attendance.js"></script>
+    <script src="static/js/search.js"></script>
 </head>
 <body>
 
@@ -12,10 +13,10 @@
 
 <form method="post" enctype="multipart/form-data" >
     <input id="importFile" type="file" name="inputFile"/>
-    <input type="button" value="submit" onclick="parseFile()" />
+    <input type="button" value="submit" onclick="renderContent()" />
 </form>
 
-<div id="XXX">
+<div id="currentClassesID">
 
 </div>
 
