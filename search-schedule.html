@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search Schedule</title>
+    <script src="static/js/searchSchedule.js"></script>
+</head>
+<body>
+
+<input id="searchInput" type="text" onkeyup="searchSchedule()">
+
+<form method="post" enctype="multipart/form-data" >
+    <input id="importFile" type="file" name="inputFile"/>
+    <input type="button" value="submit" onclick="getContent()" />
+</form>
+
+</body>
+</html>

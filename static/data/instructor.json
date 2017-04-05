@@ -1,16 +1,16 @@
 {
   "instructors": [
     {
-      "name": "",
-      "inNo": "",
+      "name": "Sir Ali",
+      "inNo": "1349",
       "title": "",
       "schedule": [
         {
-          "room": "",
-          "classCode": "",
-          "subject" : "",
-          "time" : "",
-          "day" : ""
+          "room": "s426",
+          "classCode": "9423",
+          "subject" : "integLec",
+          "time" : "12",
+          "day" : "Friday"
         }
       ]
     },
@@ -29,16 +29,16 @@
       ]
     },
     {
-      "name": "",
-      "inNo": "",
+      "name": "Sir Famorca",
+      "inNo": "1425",
       "title": "",
       "schedule": [
         {
-          "room": "",
-          "classCode": "",
-          "subject" : "",
-          "time" : "",
-          "day" : ""
+          "room": "s527",
+          "classCode": "9413",
+          "subject" : "Networks",
+          "time" : "10-11",
+          "day" : "Wednesday"
         }
       ]
     },
