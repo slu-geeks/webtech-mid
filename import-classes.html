@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Import Classes</title>
+    <script src="static/js/imports.js"></script>
+</head>
+<body>
+<form id="importClasses" onsubmit="">
+    <p><button onclick="showRegisteredIns()">Registered Instructorssss</button> Should be drop Down</p>
+    <p><input type="number" name="instructorID" placeholder="Identification" value="123123"/>   Instructor ID</p>
+    <p><input type="text" name="roomNo" placeholder="S326" value="s326"/>   Room Number</p>
+    <p><input type="text" name="codeNo" placeholder="Code Number" value="9426A"/> Code Number</p>
+    <p><input type="time" name="time" placeholder="Time"/>   Time</p>
+    <p>
+        <select name="Subject">
+            <option value="Webtech Lecture">Webtech Lecture</option>
+            <option value="Webtech Laboratory">Webtech Laboratory</option>
+            <option value="Integrative Programming">Integrative Programming</option>
+            <option value="Web System and Technologies">Web System and Technologies</option>
+        </select>
+        !Problem When adding
+    </p>
+    <p>
+        <select name="Day">
+            <option value="Monday">Monday</option>
+            <option value="Tuesday">Tuesday</option>
+            <option value="Wednesday">Wednesday</option>
+            <option value="Thursday">Thursday</option>
+            <option value="Friday">Friday</option>
+            <option value="Saturday">Saturday</option>
+            <option value="Sunday">Sunday</option>
+        </select>
+        !Problem when adding
+    </p>
+    <p><button id="addMore" name="add" onclick="addClasses();return false;">Add more fields</button></p>
+    <p><button id="submit" name="submit">Submit</button></p>
+</form>
+
+<p><button id="clearLocalStorage" name="submit" onclick="removeClassesLocalStorage();return false;">clear local storage</button></p>
+<p><button name="submit" onclick="showClassJson();return false;">show updated json</button></p>
+<p><a id="dataCLasses" href="data:text/plainText,this is a string" download>download the updated JSON file</a> </p>
+
+<p id="demo"></p>
+
+<p id="printClassJson">
+
+</p>
+</body>
+</html>
