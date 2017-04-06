@@ -32,14 +32,45 @@ function addInstructor() {
 
 }
 //CLASSSES MON
-function showRegisteredIns() {
+function viewRegIns() {
     let ins = JSON.parse(localStorage.getItem("instructorList"));
-    window.alert(ins.instructors[0].name);
-    /*for (let i = 0; i < ins.length; i++) {
-     document.innerHTML(ins.instructors[i].name);
-     let op = document.getElementsByName("RegIns").appendChild(document.createElement("option"));
-     }*/
+    if(!ins){
+        alert("Create a Instructor First!");
+    }
+    let length = Object.keys(ins.instructors).length;
+    let select = document.getElementById("RegIns");
+    for (let i = 0; i < length; i++) {
+        let option = document.createElement("option");
+        option.text = ins.instructors[i].name;
+        select.add(option,select[i]);
+    }
 }
+
+
+        /*let op = document.createElement("option");
+         op.setAttribute("value", ins.instructors[i].name);
+         RegIns.appendChild(op);*/
+        /*document.write(
+         arr[i].push(ins.instructors[i].name);*/
+
+//var count = Object.keys(ins).length;
+    //document.write(count);
+    /*let arr = [];
+    for (let key in ins.instructors) {
+        arr.push(key);
+    }
+    let str = arr.toString();
+    document.write(arr);*/
+    /* let arr = [];
+    for (let i = 0; i < ins.length; i++) {
+        arr[i].push(ins.instructors[i].name);
+    }
+    let str = arr.toString();
+     /!*let arr = document.innerHTML(ins.instructors[i].name);
+     let op = document.getElementsByName("RegIns").appendChild(document.createElement("option"));
+     *!/
+    document.write(str);*/
+
 
 function addClasses() {
     let classes = localStorage.getItem("classesList");
