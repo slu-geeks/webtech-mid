@@ -1,7 +1,7 @@
 {
   "schedule": [
     {
-      "day" : "Monday",
+      "days" : "Monday",
       "8:30 - 9:30" : [
         {
           "classCode": "9423",
@@ -28,7 +28,7 @@
         }
       ]
     },{
-      "day" : "Wednesday",
+      "days" : "Wednesday",
       "3:00 - 4:00" : [
         {
           "classCode": "9413",
