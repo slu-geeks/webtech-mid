@@ -18,7 +18,7 @@ function addInstructor() {
         obj = JSON.parse('{"instructors": [{' + jsonString + '}]}');
     } else {
         obj = JSON.parse(instructors);
-        var t = JSON.parse('{' + jsonString + '}');
+        let t = JSON.parse('{' + jsonString + '}');
         obj['instructors'].push(t);
     }
 
@@ -31,7 +31,12 @@ function addInstructor() {
     showLatestJson();
 
 }
-//CLASSSES MON
+
+
+
+
+
+//FOR CLASSES
 function viewRegIns() {
     let ins = JSON.parse(localStorage.getItem("instructorList"));
     if(!ins){
@@ -46,44 +51,23 @@ function viewRegIns() {
     }
 }
 
+function addSched() {
+    let classes = localStorage.getItem("schedList");
 
-        /*let op = document.createElement("option");
-         op.setAttribute("value", ins.instructors[i].name);
-         RegIns.appendChild(op);*/
-        /*document.write(
-         arr[i].push(ins.instructors[i].name);*/
-
-//var count = Object.keys(ins).length;
-    //document.write(count);
-    /*let arr = [];
-    for (let key in ins.instructors) {
-        arr.push(key);
-    }
-    let str = arr.toString();
-    document.write(arr);*/
-    /* let arr = [];
-    for (let i = 0; i < ins.length; i++) {
-        arr[i].push(ins.instructors[i].name);
-    }
-    let str = arr.toString();
-     /!*let arr = document.innerHTML(ins.instructors[i].name);
-     let op = document.getElementsByName("RegIns").appendChild(document.createElement("option"));
-     *!/
-    document.write(str);*/
-
-
-function addClasses() {
-    let classes = localStorage.getItem("classesList");
-
-    let elements = document.getElementById("importClasses").elements;
+    let elements = document.getElementById("importSched").elements;
     let jsonString = "";
+    let e = document.getElementById("Day");
     for (let i = 0; i < elements.length; i++) {
         let item = elements.item(i);
         let name = item.name;
 
+
         if (name != undefined && name != "add" && name != "submit") {
+            if (name == "Day")
+                jsonString = jsonString.concat('"' + item.name + '": "' + e.options[e.selectedIndex].value + '"');
+            else
             jsonString = jsonString.concat('"' + item.name + '": "' + item.value + '"');
-            jsonString = jsonString.concat(name != "Day" ? "," : "");
+            jsonString = jsonString.concat(name != "timeOut" ? "," : "");
         }
     }
 
@@ -95,9 +79,9 @@ function addClasses() {
         let t = JSON.parse('{' + jsonString + '}');
         obj['classes'].push(t);
     }
-    showClassJson();
+    showSchedJson();
     let jsonStr = JSON.stringify(obj, null, 4);
-    localStorage.setItem('classesList', jsonStr);
+    localStorage.setItem('schedList', jsonStr);
 
     //different part for showing inside somewhere
 
@@ -106,8 +90,8 @@ function addClasses() {
 
 }
 
-function showClassJson() {
-    let classes = localStorage.getItem("classesList");
+function showSchedJson() {
+    let classes = localStorage.getItem("schedList");
 
     document.getElementById("printClassJson").innerHTML = '';
 
@@ -124,10 +108,10 @@ function showClassJson() {
 
 }
 
-function removeClassesLocalStorage() {
+function removeSchedLocalStorage() {
     let r = confirm("This will remove all Classes Created, Are you sure about this ?");
     if (r == true) {
-        let classes = localStorage.getItem("classesList");
+        let classes = localStorage.getItem("schedList");
         let stringInstructorJson = JSON.stringify(JSON.parse(classes), null, 4); // Indented with tab
         let textElement = document.createTextNode(stringInstructorJson);
         let preElement = document.createElement("pre");
@@ -144,7 +128,7 @@ function removeClassesLocalStorage() {
         pElement2.appendChild(preElement);
         document.getElementById("printClassJson").appendChild(pElement2);
 
-        localStorage.removeItem("classesList");
+        localStorage.removeItem("schedList");
     }
 }
 //CLASSSES MON
