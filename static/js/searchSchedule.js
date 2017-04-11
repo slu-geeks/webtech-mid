@@ -8,17 +8,41 @@ function getContent() {
         let reader = new FileReader();
 
         reader.onload = function (e) {
-            let allClasses = e.target.result;
-            localStorage.setItem('schedJSON', allClasses);
+            let allSchedule = e.target.result;
+            localStorage.setItem('schedJSON', allSchedule);
 
-            let jsonData = JSON.parse(allClasses);
-            alert(jsonData);
+            let jsonData = JSON.parse(allSchedule);
+            let nodeP = document.createElement("P");
+            alert(allSchedule);
+
+            for(let index in jsonData.schedule){
+                let eachSchedule = jsonData.schedule[index];
+
+                let classUL = document.createElement("UL");
+                classUL.setAttribute("class", "schoolClassUL");
+
+                liAppender(eachSchedule.days, classUL);
+                liAppender(eachSchedule.times, classUL);
+                liAppender(eachSchedule.classes, classUL);
+
+                nodeP.appendChild(classUL);
+                document.getElementById("currentClassesID").appendChild(nodeP);
+
+            }
 
         };
 
         reader.readAsBinaryString(file.files[0]);
     }
 }
+
+function liAppender(data, parent){
+    let liElement = document.createElement("LI")
+    let textElement = document.createTextNode(data);
+    liElement.appendChild(textElement);
+    parent.appendChild(liElement)
+}
+
 function searchSchedule(){
 
     let savedInfoLocalStorage = localStorage.getItem('schedJSON');
@@ -44,5 +68,19 @@ function searchSchedule(){
 
     console.log(returnSchedule);
 
+}
+
+function searchStringInArray (str, strArray) {
+    let findedItems = new Array();
+    console.log(str);
+
+    for(let index in strArray){
+        let element = strArray[index];
+        if(str != "" && str != undefined && element.includes(str)){
+            findedItems.push(element);
+        }
+    }
+
+    return findedItems;
 }
 
