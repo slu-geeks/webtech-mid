@@ -59,3 +59,16 @@ tr:nth-child(even) {background-color: #222222}
 thead {
 	margin-bottom: 2vh;
 }
+
+#tagLogo {
+	 float: right;
+	 max-width: 100%;
+	 height: auto;
+ }
+
+#tagLogo p {
+	font-weight: bold;
+	font-family: 'Pangolin';font-size: 25px;
+
+
+}
