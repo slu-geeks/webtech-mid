@@ -6,7 +6,9 @@
 		background-color: #333;
 		border: none;
 	}
-		
+	.s2s {
+		display: inline-block;
+	}
 	.oil {
 		display: initial !important;
 	}
