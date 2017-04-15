@@ -6,9 +6,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Check Attendance</title>
 
-    <script type="text/javascript" src="static/bootstrap/js/jquery.min.js"></script>
-    <script type="text/javascript" src="static/bootstrap/js/bootstrap.min.js"></script>
-
     <link rel="stylesheet" href="static/css/index-small.css" type="text/css" />
     <link rel="stylesheet" href="static/css/index-medium.css" type="text/css" />
     <link rel="stylesheet" href="static/css/index-large.css" type="text/css" />
@@ -42,60 +39,26 @@
     </div>
 	
 	<section class="row">
-		<div class="container col-12 col-m-8">
-			<div class="col-4" style="margin : 10px 20px 0px 20px !important; float: left;">
-				<img src="static/img/thumbnail.png" width=100vw alt="OBAMA">
-				<h1>S326 Under Obama</h1>
-				<button id="submit" name="submit" class="form button">Submit</button>
-			</div>
-			<table class="col-7 col-m-12">
-				<thead>
-					<thead>
-						<tr>
-							<th class = "head">Info</th>
-							<td class = "head">Value</td>
-						</tr>
-					</thead>
-				
-					<tr>
-						<th>Code Number</th>
-						<td>1</td>
-					</tr>
-					<tr>
-						<th>Instructor</th>
-						<td>1</td>
-					</tr>
-					<tr>
-						<th>Subject</th>
-						<td>1</td>
-					</tr>
-					<tr>
-						<th>Date</th>
-						<td>1</td>
-					</tr>
-					<tr>
-						<th>Time</th>
-						<td>1</td>
-					</tr>
+		<div class="container col-12 col-m-8 big">
+			<form method="post" enctype="multipart/form-data" >
+				<input id="importFile" type="file" name="inputFile"/>
+				<input class = "button sp-form" type="button" value="submit" onclick="importClassesFromFile()" />
+			</form>
 
-					<tr>
-						<th>Attendance State</th>
-						<td>
-							<select name="Subject" class = "sp-form">
-								<option selected = "selected" value="Webtech Lecture">Not checked</option>
-								<option value="Webtech Laboratory">Absent</option>
-								<option value="Integrative Programming">Present</option>
-								<option value="Web System and Technologies">Late</option>
-							</select>
-						</td>
-						
-						</td>
-					</tr>
-				</thead>
-			</table>
-			
-		</div>
+			<form>
+				<input  type="text" id="urlId" />
+				<input class = "button sp-form" type="button" value="submit" onclick="importClassesFromURL()" />
+			</form>
+
+			<div id="currentClassesID">
+
+			</div>
+
+			<p id="hiddenJson" hidden>
 	</section>
+	
+
+    
 	<!-- DISPLAY NAVIGATION IN THE BOTTOM (ois = only in small) ON PHONES -->
     <div class="row ois"> 
         <ul class="nav col-12">
@@ -121,5 +84,4 @@
     </div>
 
 </body>
-
 </html>
