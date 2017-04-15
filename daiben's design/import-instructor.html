@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Import Instructors</title>
+    <script src="static/js/imports.js"></script>
+</head>
+<body>
+<form id="importInstructorId" onsubmit="">
+    <p><input type="text" name="name" placeholder="Full Name" value="sss"/></p>
+    <p><input type="number" name="idNumber" placeholder="Id Number" value="123"/></p>
+    <p><input type="email" name="email" placeholder="Email" value="ix56@yahoo.com"/></p>
+    <p><input type="number" name="age" placeholder="Age" value="30"/></p>
+    <p><input type="text" name="title" placeholder="Title" value="Senior"/></p>
+    <p><input type="number" name="cellphoneNo1" placeholder="CellPhone No1" value="321321"/></p>
+    <p><input type="number" name="cellphoneNo2" placeholder="CellPhone No2" value="456456"/></p>
+    <p><button id="addMore" name="add" onclick="addInstructor();return false;">Add more fields</button></p>
+    <p><button id="submit" name="submit">Submit</button></p>
+</form>
+
+<p><button id="clearLocalStorage" name="submit" onclick="removeLocalStorage();return false;">clear local storage</button></p>
+<p><button name="submit" onclick="showLatestJson();return false;">show updated json</button></p>
+<p><a id="dataInstructorID" href="data:text/plainText,this is a string" download>download the updated JSON file</a> </p>
+
+<p id="demo"></p>
+
+<p id="printJson">
+
+</p>
+</body>
+</html>

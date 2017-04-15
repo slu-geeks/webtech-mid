@@ -1,4 +1,7 @@
 @media only screen and (max-width: 768px) {
+	* {
+		font-size: 3vh !important;
+	}
     /* For mobile phones: */
     [class*="col-"] {
         width: 100%;
