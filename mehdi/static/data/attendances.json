@@ -1,0 +1,9 @@
+{
+  "attendances": [
+    {
+      "schedule_date" : "",
+      "schedule_state" : "",
+      "FK_schedule_id" : ""
+    }
+  ]
+}
