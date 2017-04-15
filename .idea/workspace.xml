@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3cbdb35c-23d5-4c5d-8256-5f635253368e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/responsive design/class-availability.html" afterPath="$PROJECT_DIR$/responsive design/class-availability.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/responsive design/static/css/responsive.css" afterPath="$PROJECT_DIR$/responsive design/static/css/responsive.css" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,8 +23,8 @@
       <file leaf-file-name="class-availability.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/responsive design/class-availability.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="918">
-              <caret line="90" column="159" lean-forward="false" selection-start-line="90" selection-start-column="159" selection-end-line="90" selection-end-column="159" />
+            <state relative-caret-position="555">
+              <caret line="100" column="77" lean-forward="false" selection-start-line="100" selection-start-column="77" selection-end-line="100" selection-end-column="77" />
               <folding />
             </state>
           </provider>
@@ -355,7 +353,7 @@
       <workItem from="1492228788767" duration="100000" />
       <workItem from="1492232471091" duration="157000" />
       <workItem from="1492232685952" duration="1223000" />
-      <workItem from="1492243536168" duration="3216000" />
+      <workItem from="1492243536168" duration="4805000" />
     </task>
     <task id="LOCAL-00001" summary="Search Schedule">
       <created>1491405152604</created>
@@ -375,7 +373,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43825000" />
+    <option name="totallyTimeSpent" value="45414000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
@@ -750,8 +748,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/responsive design/class-availability.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="918">
-          <caret line="90" column="159" lean-forward="false" selection-start-line="90" selection-start-column="159" selection-end-line="90" selection-end-column="159" />
+        <state relative-caret-position="555">
+          <caret line="100" column="77" lean-forward="false" selection-start-line="100" selection-start-column="77" selection-end-line="100" selection-end-column="77" />
           <folding />
         </state>
       </provider>
