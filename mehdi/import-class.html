@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Import Class</title>
+    <script type="text/javascript" src="static/js/loader.js"></script>
+</head>
+<body>
+<!-- static data which import once -->
+<form method="post" enctype="multipart/form-data" >
+    <input id="importFile" type="file" name="inputFile"/>
+    <input type="button" value="submit" onclick="importClassesFromFile()" />
+</form>
+
+<form>
+    <input  type="text" id="urlId" />
+    <input type="button" value="submit" onclick="importClassesFromURL()" />
+</form>
+
+<div id="currentClassesID">
+
+</div>
+
+<p id="hiddenJson" hidden>
+
+</p>
+</body>
+</html>
